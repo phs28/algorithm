@@ -8,7 +8,14 @@ public class Main {
 		//문자열과 문자는 순서대로 모두 소문자로만 주어지고, 길이는 100을 넘지 않음
 		Scanner scan = new Scanner(System.in);
 		
+		String s = scan.next();
+		char t = scan.next().charAt(0);
 		
+		int[] arr = new int[s.length()];
+		
+		for(int i=0; i<) {
+			
+		}
 		
 		scan.close();
 	}
