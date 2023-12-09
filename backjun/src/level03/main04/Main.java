@@ -12,7 +12,7 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		
 		String s = scan.next();
-		char t = scan.next().charAt(0);
+		char t = scan.next().charAt(0); //문자로 변환
 		
 		int[] arr = new int[s.length()];
 		

@@ -18,7 +18,7 @@ public class Main {
 		List<Integer> answer;
 		
 		for(int i=0; i<arr.length; i++) {
-			arr[i] += scan.nextInt();
+			arr[i] = scan.nextInt();
 		}
 		
 		answer = new ArrayList<>();
