@@ -24,5 +24,7 @@ public class BOJ_2750 {
 		for(int val :arr) {
 			System.out.println(val);
 		}
+		
+		scan.close();
 	}
 }
