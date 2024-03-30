@@ -13,6 +13,7 @@ public class BOJ_2750 {
 			arr[i] = scan.nextInt();
 		}
 		
+		//정렬 로직
 		for(int i=0; i<arr.length-1; i++) {
 			for(int j=i+1; j < arr.length; j++) {
 				temp = arr[j];
@@ -21,6 +22,7 @@ public class BOJ_2750 {
 			}
 		}
 		
+		//향상된 for문
 		for(int val :arr) {
 			System.out.println(val);
 		}
