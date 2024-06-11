@@ -54,5 +54,52 @@ public class IntQueue {
 		return x;
 	}
 	
+	public int peek() throws EmptyIntQueueException {
+		if(num <= 0) {
+			throw new EmptyIntQueueException();
+		}
+		return que[front];
+	}
+	
+	public int indexOf(int x) {
+		for(int i=0; i<num; i++) {
+			int idx = (i+front) % max; 
+			if(que[idx] == x) { // 검색 성공
+				return idx;
+			}
+		}
+		return -1;
+	}
+	
+	public void clear() {
+		num = front = rear = 0;
+	}
+	
+	public int capacity() {
+		return max;
+	}
+	
+	public int size() {
+		return num;
+	}
+	
+	public boolean isEmpty() {
+		return num <= 0;
+	}
+	
+	public boolean isFull() {
+		return num >= max;
+	}
+	
+	public void dump() {
+		if(num <= 0) {
+			System.out.println("큐가 비어있습니다.");
+		} else {
+			for(int i=0; i<num; i++) {
+				System.out.println(que[(i+front) % max] + " ");
+			}
+			System.out.println();
+		}
+	}
 	
 }
