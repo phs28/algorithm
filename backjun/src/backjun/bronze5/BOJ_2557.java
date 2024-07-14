@@ -1,4 +1,4 @@
-package backjun;
+package backjun.bronze5;
 
 public class BOJ_2557 {
 	public static void main(String[] args) {
