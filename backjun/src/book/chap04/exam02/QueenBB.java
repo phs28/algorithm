@@ -1,6 +1,7 @@
 package book.chap04.exam02;
 
-public class QueenB {
+public class QueenBB {
+  static boolean[] flag = new boolean[8];
   static int[] pos = new int[8];
 
   static void print() {
@@ -12,17 +13,20 @@ public class QueenB {
 
   static void set(int i) {
     for(int j=0; j<8; j++) {
-      pos[i] = j;
-      if(i == 7) {
-        print();
-      } else {
-        set(i + 1);
-      }
+      if(flag[j] == false) {
+        pos[i] = j;
+        if(i == 7) {
+          print();
+        } else {
+          flag[j] =true;
+          set(i + 1);
+          flag[j] = false;
+        }
+      } 
     }
   }
 
   public static void main(String[] args) {
     set(0);
   }
-
 }
